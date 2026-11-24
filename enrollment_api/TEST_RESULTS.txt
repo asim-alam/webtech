@@ -1,0 +1,21 @@
+============================= test session starts ==============================
+platform linux -- Python 3.13.5, pytest-9.0.2, pluggy-1.6.0 -- /opt/pyvenv/bin/python
+cachedir: .pytest_cache
+metadata: {'Python': '3.13.5', 'Platform': 'Linux-6.18.57-x86_64-with-glibc2.41', 'Packages': {'pytest': '9.0.2', 'pluggy': '1.6.0'}, 'Plugins': {'anyio': '4.13.0', 'ddtrace': '4.4.0', 'Faker': '40.1.2', 'asyncio': '1.3.0', 'cov': '7.0.0', 'json-report': '1.5.0', 'metadata': '3.1.1'}, 'PLATFORM': 'linux/amd64', 'CI': 'true'}
+rootdir: /mnt/data/enrollment_refactored/enrollment_api
+plugins: anyio-4.13.0, ddtrace-4.4.0, Faker-40.1.2, asyncio-1.3.0, cov-7.0.0, json-report-1.5.0, metadata-3.1.1
+asyncio: mode=Mode.STRICT, debug=False, asyncio_default_fixture_loop_scope=None, asyncio_default_test_loop_scope=function
+collecting ... collected 10 items
+
+tests/test_enrollment.py::test_create_enrollment PASSED                  [ 10%]
+tests/test_enrollment.py::test_read_enrollment PASSED                    [ 20%]
+tests/test_enrollment.py::test_cancel_and_restore_seat PASSED            [ 30%]
+tests/test_enrollment.py::test_course_full PASSED                        [ 40%]
+tests/test_enrollment.py::test_duplicate_enrollment PASSED               [ 50%]
+tests/test_enrollment.py::test_unknown_student PASSED                    [ 60%]
+tests/test_enrollment.py::test_unknown_course PASSED                     [ 70%]
+tests/test_enrollment.py::test_invalid_input PASSED                      [ 80%]
+tests/test_enrollment.py::test_unknown_enrollment PASSED                 [ 90%]
+tests/test_enrollment.py::test_unexpected_error_is_hidden PASSED         [100%]
+
+============================== 10 passed in 0.37s ==============================
